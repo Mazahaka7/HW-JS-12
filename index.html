@@ -14,7 +14,6 @@
       body {
         padding: 0 20px;
       }
-
       .container {
         max-width: 1400px;
         margin: 0 auto;
@@ -28,19 +27,28 @@
       .cards > div,
       .cards > ul {
         border: 1px solid blueviolet;
-        height: 300px;
+        height: 250px;
       }
-
+      h4 {
+        background-color: #000000;
+        color: aliceblue;
+      }
       div,
       ul {
         font-size: 30px;
       }
+      .card-item > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-      ul {
-        width: 200px;
+      .history > ul {
+        margin: 0 30% 0 30%;
+        width: 150px;
         list-style-type: none;
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
       }
       li {
         cursor: pointer;
@@ -50,6 +58,7 @@
         padding: 10px;
         margin: 20px calc((200px - 80px) / 4);
         border: 3px solid blueviolet;
+        border-radius: 5px;
       }
     </style>
   </head>
@@ -76,7 +85,7 @@
             <h4>event.which</h4>
             <div class="which"></div>
           </div>
-          <div class="card-item">
+          <div class="card-item history">
             <h4>History</h4>
             <ul class="historyBlock"></ul>
           </div>
